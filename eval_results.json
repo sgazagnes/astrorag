@@ -1,0 +1,274 @@
+{
+  "timestamp": "2026-05-18T19:08:38.855618",
+  "avg_retrieval_precision": 0.64,
+  "avg_answer_score": 2.1,
+  "results": [
+    {
+      "id": 1,
+      "question": "What is the CLASSY survey and what are its main scientific goals?",
+      "expected_answer": "CLASSY is a Hubble Space Telescope survey of 45 local star-forming galaxies designed to study UV spectral properties of low-redshift analogues of high-redshift galaxies that may have reionized the universe.",
+      "system_answer": "The CLASSY survey is a collaborative research initiative focused on characterizing star-forming galaxies through UV spectroscopy. Its main scientific goals include producing a spectral atlas, compiling ancillary data, fitting stellar continua, and creating databases for emission and absorption feature properties, as well as Ly\u03b1 emission profile fits. The survey aims to cover a broad range of physical properties such as stellar mass, star formation rate (SFR), metallicity, and ionization in these galaxies. Additionally, it seeks to facilitate community science investigations by providing user-friendly data products and tutorials.",
+      "sources": [
+        "data\\papers\\James_2022_ApJS_262_37.pdf",
+        "data\\papers\\staf1723.pdf",
+        "data\\papers\\Berg_2022_ApJS_261_31.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "CLASSY",
+          "UV"
+        ],
+        "misses": [
+          "reionization",
+          "Hubble",
+          "star-forming"
+        ],
+        "precision": 0.4
+      },
+      "answer_score": {
+        "score": 2,
+        "reason": "The system answer provides detailed information about the CLASSY survey's goals and methods but lacks the specific mention of its focus on local star-forming galaxies and the context of reionization."
+      }
+    },
+    {
+      "id": 2,
+      "question": "How many galaxies are in the CLASSY sample and what are the selection criteria?",
+      "expected_answer": "The CLASSY sample contains 45 star-forming galaxies selected to span a wide range of physical properties including star formation rate, metallicity, and UV luminosity to represent diverse conditions in the local universe.",
+      "system_answer": "The CLASSY sample consists of 45 nearby galaxies. The selection criteria for the CLASSY survey include a careful selection to achieve comprehensive, high-resolution, high-S/N rest-FUV spectra of star-forming galaxies within the redshift range of 0.002 < z < 0.182. The sample spans a wide range of stellar masses (logM* \u223c6\u201310 M\u2299), star formation rates (log SFR \u223c\u22122 to +2 M\u2299 yr\u20131), oxygen abundances (12+log(O/H) \u223c7\u20139), electron densities (ne \u223c10^1\u201310^3 cm\u20133), and reddening values (E(B \u2212 V) \u223c0.0\u20130.7).",
+      "sources": [
+        "data\\papers\\Arellano-C\u00f3rdova_2022_ApJ_935_74.pdf",
+        "data\\papers\\staf1723.pdf",
+        "data\\papers\\Berg_2022_ApJS_261_31.pdf",
+        "data\\papers\\Huberty_2024_ApJ_975_58.pdf",
+        "data\\papers\\Xu_2022_ApJ_933_222.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "45",
+          "sample",
+          "selection",
+          "star formation"
+        ],
+        "misses": [
+          "metallicity"
+        ],
+        "precision": 0.8
+      },
+      "answer_score": {
+        "score": 3,
+        "reason": "The system answer correctly states the number of galaxies in the CLASSY sample and provides detailed selection criteria that align well with the expected answer."
+      }
+    },
+    {
+      "id": 3,
+      "question": "What are the main physical properties of CLASSY galaxies such as star formation rate, metallicity, and stellar mass?",
+      "expected_answer": "CLASSY galaxies span a wide range of star formation rates, stellar masses, and metallicities, with many being low-metallicity, high-ionization compact galaxies similar to early universe objects.",
+      "system_answer": "The main physical properties of CLASSY galaxies are as follows:\n\n- Stellar Mass: \\(6.2 < \\log M_* (M_\\odot) < 10.1\\)\n- Star Formation Rate (SFR): \\(-2.0 < \\log SFR (M_\\odot \\text{ yr}^{-1}) < 1.6\\)\n- Gas-phase Metallicity: \\(7.0 < 12 + \\log(O/H) < 8.8\\)\n- Ionization Parameter: \\(0.5 < O32 < 38.0\\)\n- Reddening: \\(0.02 < E(B - V)_{\\text{neb}} < 0.67\\)\n- Electron Density: \\(10 < n_e (\\text{cm}^{-3}) < 1120\\)",
+      "sources": [
+        "data\\papers\\Xu_2022_ApJ_933_222.pdf",
+        "data\\papers\\Arellano-C\u00f3rdova_2022_ApJ_935_74.pdf",
+        "data\\papers\\staf1723.pdf",
+        "data\\papers\\Parker_2026_ApJ_997_98.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "star formation rate",
+          "metallicity",
+          "stellar mass",
+          "ionization"
+        ],
+        "misses": [],
+        "precision": 1.0
+      },
+      "answer_score": {
+        "score": 2,
+        "reason": "The system answer provides detailed quantitative ranges for the physical properties of CLASSY galaxies, but it lacks the qualitative context and comparison to early universe objects mentioned in the expected answer."
+      }
+    },
+    {
+      "id": 4,
+      "question": "What role does the neutral hydrogen column density play in Lyman-alpha escape?",
+      "expected_answer": "Higher neutral hydrogen column density increases the number of resonant scatterings of Lyman-alpha photons, reducing the escape fraction. Lower HI column density, often associated with outflows or ionized channels, facilitates escape.",
+      "system_answer": "The neutral hydrogen column density plays a critical role in Lyman-alpha (Ly\u03b1) escape by influencing the scattering of Ly\u03b1 photons as they propagate through the interstellar medium (ISM). Smaller neutral hydrogen column densities (NH I) are associated with lower scattering, resulting in narrower Ly\u03b1 emission profiles with smaller peak separations. Conversely, higher column densities lead to greater scattering, producing broader Ly\u03b1 profiles with larger peak separations. This relationship indicates that the degree of scattering among escaping Ly\u03b1 photons is linked to the neutral gas column density, which in turn affects the pathways for Lyman continuum (LyC) escape from star-forming regions. Thus, the neutral hydrogen column density is a key factor in determining the characteristics of Ly\u03b1 emission and the efficiency of ionizing radiation escape from galaxies.",
+      "sources": [
+        "data\\papers\\Parker_2026_ApJ_997_98.pdf",
+        "data\\papers\\Hu_2023_ApJ_956_39.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "neutral hydrogen",
+          "column density",
+          "escape",
+          "HI"
+        ],
+        "misses": [
+          "Lyman-alpha"
+        ],
+        "precision": 0.8
+      },
+      "answer_score": {
+        "score": 2,
+        "reason": "The system answer correctly discusses the influence of neutral hydrogen column density on Lyman-alpha escape but lacks the explicit mention of how lower column densities facilitate escape, which is a key aspect of the expected answer."
+      }
+    },
+    {
+      "id": 5,
+      "question": "How does the ionization parameter affect UV emission line diagnostics?",
+      "expected_answer": "Higher ionization parameters produce stronger high-ionization UV emission lines such as C IV and He II, making them sensitive diagnostics of the hardness of the ionizing radiation field and the physical conditions of the gas.",
+      "system_answer": "The ionization parameter, log(U), affects UV emission line diagnostics by influencing the ratios of different ionization states of elements, which can provide insights into the ionization structure of nebular environments. Specifically, the C IV/C III] line ratio, which involves emissions from different ionization states of carbon, can constrain the ionization parameter. Variations in the ionization parameter can lead to systematic effects in the observed UV\u2013optical flux offsets, primarily due to instrumental factors rather than intrinsic variations in the nebular continuum shape. Overall, the ionization parameter is a critical factor in interpreting UV emission lines and understanding the nature of the ionizing sources in star-forming galaxies.",
+      "sources": [
+        "data\\papers\\Mingozzi_2024_ApJ_962_95.pdf",
+        "data\\papers\\Mingozzi_2022_ApJ_939_110.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "ionization parameter",
+          "UV",
+          "emission line",
+          "C IV",
+          "diagnostic"
+        ],
+        "misses": [],
+        "precision": 1.0
+      },
+      "answer_score": {
+        "score": 2,
+        "reason": "The system answer is mostly correct and discusses the influence of the ionization parameter on UV emission lines, but it lacks the emphasis on the strength of high-ionization lines and their sensitivity to the ionizing radiation field."
+      }
+    },
+    {
+      "id": 6,
+      "question": "What is the relationship between Lyman-alpha and Lyman continuum escape?",
+      "expected_answer": "Lyman-alpha escape fraction is often used as an indirect tracer of Lyman continuum escape, as both are facilitated by low neutral hydrogen column density and high ionization. However the correlation is not perfect due to dust and geometry effects.",
+      "system_answer": "The relationship between Lyman-alpha (Ly\u03b1) and Lyman continuum (LyC) escape is closely tied to the pathways of LyC escape, as the origins of Ly\u03b1 photons are H II regions illuminated by LyC photons from central massive stars. The scattering of Ly\u03b1 photons by neutral hydrogen in these channels alters their direction and frequency, redistributing photon flux from the line core into the line wings. This reshaping of the Ly\u03b1 line profile provides information about outflow velocity and column density, which are relevant for understanding LyC escape. Additionally, the study indicates that there is broad consistency in the classifications of weak and strong LyC leakers, with approximately half exhibiting predicted escape fractions greater than 1%. Thus, the properties of Ly\u03b1 emission can inform us about the conditions affecting LyC escape in star-forming galaxies.",
+      "sources": [
+        "data\\papers\\Parker_2026_ApJ_997_98.pdf",
+        "data\\papers\\Hu_2023_ApJ_956_39.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "escape fraction"
+        ],
+        "misses": [
+          "Lyman-alpha",
+          "Lyman continuum",
+          "tracer",
+          "ionizing photons"
+        ],
+        "precision": 0.2
+      },
+      "answer_score": {
+        "score": 2,
+        "reason": "The system answer provides relevant information about the relationship between Lyman-alpha and Lyman continuum escape but lacks the mention of the indirect tracer aspect and the influence of dust and geometry effects."
+      }
+    },
+    {
+      "id": 7,
+      "question": "What are the main mechanisms driving outflows in CLASSY star-forming galaxies?",
+      "expected_answer": "Outflows in CLASSY galaxies are primarily driven by stellar feedback including winds from massive stars and supernovae, which create channels of low neutral gas density that facilitate the escape of ionizing and Lyman-alpha photons.",
+      "system_answer": "The main mechanisms driving outflows in CLASSY star-forming galaxies are the intense star formation bursts fueled by large reservoirs of neutral gas. The kinematics of these galaxy-scale outflows are primarily influenced by the massive stellar populations, which drive the outflows through their energy output. The properties of the outflows, such as velocities and outflow rates, depend on the characteristics of the starburst and its host galaxy, including star formation rate (SFR), stellar mass, and size. In \"single-burst\" systems, a more synchronized energy output can lead to stronger gas acceleration compared to \"multi-burst\" systems, where the mechanical feedback may be less coherent and produce slower outflows.",
+      "sources": [
+        "data\\papers\\Parker_2024_ApJ_977_104.pdf",
+        "data\\papers\\Parker_2026_ApJ_997_98.pdf",
+        "data\\papers\\Berg_2022_ApJS_261_31.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "outflow",
+          "feedback",
+          "neutral gas"
+        ],
+        "misses": [
+          "supernovae",
+          "stellar winds"
+        ],
+        "precision": 0.6
+      },
+      "answer_score": {
+        "score": 2,
+        "reason": "The system answer captures the role of massive stars and energy output in driving outflows but lacks specific mention of stellar feedback mechanisms like winds and supernovae, which are key components of the expected answer."
+      }
+    },
+    {
+      "id": 8,
+      "question": "What UV absorption lines are used to trace the interstellar medium in CLASSY galaxies?",
+      "expected_answer": "UV absorption lines such as Si II, C II, O I, and Al II are used to trace the neutral and low-ionization interstellar medium, while Si IV and C IV trace the higher-ionization phases and outflowing gas.",
+      "system_answer": "The UV absorption lines used to trace the interstellar medium in CLASSY galaxies include O I, C II, Si II, S II, and Al II, as mentioned in the analysis by K. S. Parker et al. (2024).",
+      "sources": [
+        "data\\papers\\Mingozzi_2024_ApJ_962_95.pdf",
+        "data\\papers\\Parker_2024_ApJ_977_104.pdf",
+        "data\\papers\\Parker_2026_ApJ_997_98.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "Si II",
+          "C II",
+          "absorption",
+          "UV"
+        ],
+        "misses": [
+          "interstellar medium"
+        ],
+        "precision": 0.8
+      },
+      "answer_score": {
+        "score": 2,
+        "reason": "The system answer includes some correct UV absorption lines but omits Si IV and C IV, which are important for tracing higher-ionization phases."
+      }
+    },
+    {
+      "id": 9,
+      "question": "How does dust attenuation affect the UV continuum slope in star-forming galaxies?",
+      "expected_answer": "Dust attenuation reddens the UV continuum, steepening the spectral slope beta. Higher dust content produces redder (less negative) beta values, while young, low-dust galaxies show steep blue UV slopes.",
+      "system_answer": "Dust attenuation affects the UV continuum slope in star-forming galaxies by making the spectrum appear redder. This is quantified by the \u03b2UV-slope, where a bluer (more negative) \u03b2UV-slope indicates less dust attenuation and/or a smaller contribution from the nebular continuum, allowing more ionizing radiation to escape. Conversely, a redder \u03b2UV-slope suggests greater dust attenuation, which absorbs and scatters UV light. Thus, the \u03b2UV-slope serves as an indicator of both the properties of the ionizing stellar population and the amount of dust present in the galaxy.",
+      "sources": [
+        "data\\papers\\Parker_2026_ApJ_997_98.pdf",
+        "data\\papers\\Mingozzi_2022_ApJ_939_110.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "dust",
+          "attenuation",
+          "continuum"
+        ],
+        "misses": [
+          "UV slope",
+          "beta"
+        ],
+        "precision": 0.6
+      },
+      "answer_score": {
+        "score": 2,
+        "reason": "The system answer is mostly correct but lacks specific details about how higher dust content leads to redder beta values and does not mention the steep blue slopes of young, low-dust galaxies."
+      }
+    },
+    {
+      "id": 10,
+      "question": "What makes local CLASSY galaxies good analogues for high-redshift reionization-era galaxies?",
+      "expected_answer": "CLASSY galaxies share key properties with high-redshift galaxies including compact morphology, low metallicity, high ionization, and strong UV emission lines, making them ideal local laboratories to study the physical processes that drove cosmic reionization.",
+      "system_answer": "Local CLASSY galaxies are good analogues for high-redshift reionization-era galaxies because they exhibit similar properties in terms of mass, gas metallicity, UV luminosity, and star formation activity. Specifically, the CLASSY sample includes extreme emission-line galaxies that represent a diverse range of characteristics, which are attributed to the peak of star formation that occurred at high redshift. This allows for a more detailed study of the star-gas interplay that shaped cosmic reionization, making them excellent environments for understanding the conditions and processes relevant to reionization-era galaxies.",
+      "sources": [
+        "data\\papers\\staf1723.pdf",
+        "data\\papers\\Gazagnes_2023_ApJ_952_164.pdf",
+        "data\\papers\\Parker_2024_ApJ_977_104.pdf",
+        "data\\papers\\Berg_2022_ApJS_261_31.pdf"
+      ],
+      "retrieval": {
+        "hits": [
+          "reionization"
+        ],
+        "misses": [
+          "analogue",
+          "high redshift",
+          "compact",
+          "low metallicity"
+        ],
+        "precision": 0.2
+      },
+      "answer_score": {
+        "score": 2,
+        "reason": "The system answer captures the main properties of CLASSY galaxies and their relevance to high-redshift galaxies but lacks specific mention of compact morphology and high ionization, which are key aspects of the expected answer."
+      }
+    }
+  ]
+}
