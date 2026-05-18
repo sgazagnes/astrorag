@@ -1,6 +1,6 @@
 # AstroRAG
 
-A retrieval-augmented generation (RAG) system for querying astrophysics research papers. Built over the CLASSY survey corpus, it allows researchers to ask natural language questions and receive answers grounded in the literature, with source attribution.
+A retrieval-augmented generation (RAG) system for querying astrophysics research papers. Built over the CLASSY survey literature, it allows researchers to ask natural language questions and receive answers grounded in the scientific, with source attribution. This is a proof of concept for a grant proposal, with potential expansion upon successful application.
 
 ## Overview
 
